@@ -1,0 +1,38 @@
+@import "../../app.component.scss";
+
+$char-w: 1ch;
+$gap: .5*$char-w;
+$n-char: 7;
+$in-w: $n-char*($char-w + $gap);
+
+.custom-input {
+	display: block;
+	border: none;
+	padding: 0;
+	width: $in-w;
+	&:focus {
+		outline: none;
+        color: #38b000;
+	}
+}
+
+input {
+	margin: 1em auto;
+    background: repeating-linear-gradient(90deg, 
+		dimgrey 0, dimgrey $char-w, 
+		transparent 0, transparent $char-w + $gap) 
+		0 100%/ #{$in-w - $gap} 2px no-repeat;
+	font: 5ch droid sans mono, consolas, monospace;
+	letter-spacing: $gap;
+}
+
+p {
+    margin: auto;
+    color: #e76f51;
+    background: repeating-linear-gradient(90deg, 
+		dimgrey 0, dimgrey $char-w, 
+		transparent 0, transparent 0) 
+		0 100%/ #{$in-w - $gap} 2px no-repeat;
+	font: 7ch droid sans mono, consolas, monospace;
+	letter-spacing: $gap;
+}
