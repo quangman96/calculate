@@ -22,7 +22,7 @@ input {
 		dimgrey 0, dimgrey $char-w, 
 		transparent 0, transparent $char-w + $gap) 
 		0 100%/ #{$in-w - $gap} 2px no-repeat;
-	font: 5ch droid sans mono, consolas, monospace;
+	font: 6ch droid sans mono, consolas, monospace;
 	letter-spacing: $gap;
 }
 
@@ -37,8 +37,17 @@ p {
 	letter-spacing: $gap;
 }
 
-button {
-	height: 50px;
-    margin-top: auto;
-    margin-bottom: auto;
+.button-menu {
+	height: 80px;
+	width: 80px;
+	padding: 0px;
+	border: 2px solid #eee;
+	margin: auto 7px auto 0;
+	background: url(./../../../assets/img/cal5.png);
+	background-repeat:no-repeat;
+ 	background-position: center center;
+}
+
+.flex {
+	display: flex;
 }
